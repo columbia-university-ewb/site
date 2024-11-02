@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <title>CU-EWB</title>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid d-flex align-items-center">
+        <img id="logo-img" src="https://www.nicepng.com/png/detail/266-2668799_columbia-university-engineers-without-bordersmore-vert-ewb-usa.png" alt="Logo">
+        <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">HOME</button>
+          <button class="nav-link" id="nav-events-tab" data-bs-toggle="tab" data-bs-target="#nav-events" type="button" role="tab" aria-controls="nav-events" aria-selected="false">EVENTS</button>
+          <button class="nav-link" id="nav-donate-tab" data-bs-toggle="tab" data-bs-target="#nav-donate" type="button" role="tab" aria-controls="nav-donate" aria-selected="false">DONATE</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">CONTACT US</button>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active shadow" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+         
+            <img class="cover-image" src="./images/ewb-cover.jpg">
+            <div class="overlay"></div>
+            <h1 class="centered-text bold">Engineers Without Borders</h1>
+            <h1 class="centered-text">Columbia University</h1>
+            <h3 class="centered-text subtitle">Harness your engineering skills to help people around the world.</h3>
+            <div class="button-container">
+                <button class="btn join-btn" onclick="location.href='#get-involved'">JOIN</button>
+                <button class="btn donate-btn" onclick="location.href='https://support.ewb-usa.org/give/84200/#!/donation/checkout'">DONATE</button>
+
+            </div>
+            
+      
+            
+        </div>
+        
+      <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">events</div>
+      <div class="tab-pane fade" id="nav-donate" role="tabpanel" aria-labelledby="nav-donate-tab">donate</div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">contact us</div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
+      triggerTabList.forEach(function (triggerEl) {
+        var tabTrigger = new bootstrap.Tab(triggerEl);
+        triggerEl.addEventListener('click', function (event) {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
+    </script>
+
+  </body>
+</html>
